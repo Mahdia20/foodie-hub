@@ -1,0 +1,83 @@
+/* Base settings */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('https://sona-quraishi.github.io/Foodi-Hub/images/hero-bg.jpg') center/cover no-repeat;
+  position: relative;
+}
+
+/* Glass effect box */
+.glass-box {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Menu item horizontal display */
+.menu-item-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.menu-item-card img {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Footer hover effect */
+footer a:hover {
+  color: #ffc107 !important;
+  transform: scale(1.15);
+  transition: 0.3s ease;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .menu-item-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .glass-box {
+    padding: 1.5rem;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+}

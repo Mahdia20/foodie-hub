@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foodie Hub</title>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    :target {
+      scroll-margin-top: 80px;
+    }
+    footer a:hover {
+      color: #ffc107 !important;
+      transform: scale(1.15);
+      transition: 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black px-3 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" alt="Logo" width="30" height="30" class="me-2">
+        <span class="fw-bold text-warning">Foodie Hub</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#restaurants">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero d-flex align-items-center justify-content-center text-center text-white" style="height: 100vh; background-color: #000;">
+    <div class="glass-box p-4">
+      <div class="container">
+        <h1 class="display-4 fw-bold text-warning">Welcome to Foodie Hub</h1>
+        <p class="lead">Order your favorite meals instantly!</p>
+        <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg" alt="Delicious Pizza" class="img-fluid mt-3 rounded shadow" style="max-width: 400px;">
+        <div class="d-flex justify-content-center gap-3 mt-4">
+          <a href="#restaurants" class="btn btn-warning fw-bold px-4">MENU</a>
+          <a href="#contact" class="btn btn-outline-light fw-bold px-4">ORDER</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurants Section -->
+  <section id="restaurants" class="container py-5">
+    <h2 class="text-center text-warning mb-5 fw-bold">Our Restaurants</h2>
+    <div class="row g-4">
+
+    <!-- Shaqayeq Restaurant -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow">
+        <img src="images/shaqayeq.jpg" class="card-img-top" alt="Shaqayeq Restaurant">
+
+        <div class="card-body">
+          <h5 class="card-title">Shaqayeq Restaurant</h5>
+          <p class="card-text">Authentic Afghan cuisine with a homemade taste.</p>
+          <button class="btn btn-outline-warning btn-sm" data-bs-toggle="collapse" data-bs-target="#menuShaqayeq">View Menu</button>
+
+          <div id="menuShaqayeq" class="collapse mt-3">
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center mb-2">
+                <img src="images/kabuli.jpg" class="me-2 rounded" width="60" height="60" alt="Kabuli">
+
+                <div><strong>Kabuli Pulao</strong><br><small class="text-muted">250 AFN</small></div>
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <img src="images/mantu.jpg" class="me-2 rounded" width="60" height="60" alt="Mantu">
+                <div><strong>Mantu</strong><br><small class="text-muted">180 AFN</small></div>
+              </li>
+              <li class="d-flex align-items-center">
+                <img src="images/drink.jpg" class="me-2 rounded" width="60" height="60" alt="Drink">
+                <div><strong>Soft Drink</strong><br><small class="text-muted">40 AFN</small></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arg Restaurant -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow">
+        <img src="images/arg.jpg" class="card-img-top" alt="Arg Restaurant">
+
+        <div class="card-body">
+          <h5 class="card-title">Arg Restaurant</h5>
+          <p class="card-text">Delicious dishes in a cozy family environment.</p>
+          <button class="btn btn-outline-warning btn-sm" data-bs-toggle="collapse" data-bs-target="#menuArg">View Menu</button>
+
+          <div id="menuArg" class="collapse mt-3">
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center mb-2">
+                <img src="images/kebab.jpg" class="me-2 rounded" width="60" height="60" alt="Kebab">
+                <div><strong>Grilled Chicken Kebab</strong><br><small class="text-muted">220 AFN</small></div>
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <img src="images/soup.jpg" class="me-2 rounded" width="60" height="60" alt="Soup">
+                <div><strong>Vegetable Soup</strong><br><small class="text-muted">90 AFN</small></div>
+              </li>
+              <li class="d-flex align-items-center">
+                <img src="images/juice.jpg" class="me-2 rounded" width="60" height="60" alt="Juice">
+                <div><strong>Fresh Juice</strong><br><small class="text-muted">70 AFN</small></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ziafat Restaurant -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow">
+        <img src="images/ziafat.jpg" class="card-img-top" alt="Ziafat Restaurant">
+
+        <div class="card-body">
+          <h5 class="card-title">Ziafat Restaurant</h5>
+          <p class="card-text">Elegant environment with rich Afghan flavors.</p>
+          <button class="btn btn-outline-warning btn-sm" data-bs-toggle="collapse" data-bs-target="#menuZiafat">View Menu</button>
+
+          <div id="menuZiafat" class="collapse mt-3">
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center mb-2">
+                <img src="images/kabuli.jpg" class="me-2 rounded" width="60" height="60" alt="Qabeli">
+                <div><strong>Qabeli Palaw</strong><br><small class="text-muted">240 AFN</small></div>
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <img src="images/salad.jpg" class="me-2 rounded" width="60" height="60" alt="Salad">
+                <div><strong>Seasonal Salad</strong><br><small class="text-muted">60 AFN</small></div>
+              </li>
+              <li class="d-flex align-items-center">
+                <img src="images/tea.jpg" class="me-2 rounded" width="60" height="60" alt="Tea">
+                <div><strong>Green Tea</strong><br><small class="text-muted">30 AFN</small></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barg Restaurant -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow">
+        <img src="images/barg.jpg" class="card-img-top" alt="Barg Restaurant">
+
+        <div class="card-body">
+          <h5 class="card-title">Barg Restaurant</h5>
+          <p class="card-text">Modern grilled dishes and delicious desserts.</p>
+          <button class="btn btn-outline-warning btn-sm" data-bs-toggle="collapse" data-bs-target="#menuBarg">View Menu</button>
+
+          <div id="menuBarg" class="collapse mt-3">
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center mb-2">
+                <img src="images/steak.jpg" class="me-2 rounded" width="60" height="60" alt="Steak">
+                <div><strong>Beef Steak</strong><br><small class="text-muted">350 AFN</small></div>
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <img src="images/kebab.jpg" class="me-2 rounded" width="60" height="60" alt="Kebab">
+                <div><strong>Special Kebab</strong><br><small class="text-muted">300 AFN</small></div>
+              </li>
+              <li class="d-flex align-items-center">
+                <img src="images/dessert.jpg" class="me-2 rounded" width="60" height="60" alt="Dessert">
+                <div><strong>Chocolate Dessert</strong><br><small class="text-muted">120 AFN</small></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_960_720.jpg" class="img-fluid rounded shadow" alt="About Us">
+      </div>
+      
+      <div class="col-md-6">
+        <h2 class="fw-bold mb-3">About Foodie Hub</h2>
+        <p>
+          Foodie Hub is your go-to platform to explore and order from top-rated local restaurants. We connect food lovers with the best meals in town — fast, simple, and delicious.
+        </p>
+        <ul class="list-unstyled">
+          <li>🍽️ Wide variety of Afghan and international dishes</li>
+          <li>🚚 Fast delivery service</li>
+          <li>💳 Online and cash payment options</li>
+        </ul>
+        <a href="#contact" class="btn btn-warning mt-3 fw-bold">Contact Us</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Contact Form Section -->
+<section class="bg-white py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold">Send Us a Message</h2>
+    <form class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Write your message..." required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-warning px-4 fw-bold">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer / Contact Section -->
+<footer id="contact" class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <!-- Contact Info -->
+      <div class="col-md-6 mb-4">
+        <h5 class="fw-bold">Contact Us</h5>
+        <p><i class="bi bi-envelope me-2"></i> info@foodiehub.com</p>
+        <p><i class="bi bi-telephone me-2"></i> +93 700 123 456</p>
+        <p><i class="bi bi-geo-alt me-2"></i> Kabul, Afghanistan</p>
+      </div>
+      
+<!-- Follow Us with 4 icons -->
+<div class="col-md-6 text-md-end text-center">
+  <h5 class="fw-bold mb-3">Follow Us</h5>
+  <div class="d-inline-flex gap-3 justify-content-center">
+    <a href="#" class="text-white fs-5" title="Facebook">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a href="#" class="text-white fs-5" title="Instagram">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="#" class="text-white fs-5" title="Twitter">
+      <i class="bi bi-twitter"></i>
+    </a>
+    <a href="#" class="text-white fs-5" title="YouTube">
+      <i class="bi bi-youtube"></i>
+    </a>
+  </div>
+</div>
+<footer id="contact" class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- ... Contact + Follow Us ... -->
+    </div>
+
+    <hr class="border-secondary" />
+
+    <p class="text-center mb-0 small text-white-50">
+      &copy; 2025 | Designed by <strong>Mahdia khawari</strong>
+    </p>
+  </div>
+</footer>
+
+
+
